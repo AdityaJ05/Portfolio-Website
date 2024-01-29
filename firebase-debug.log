@@ -1,0 +1,44 @@
+[debug] [2022-05-04T10:43:37.754Z] ----------------------------------------------------------------------
+[debug] [2022-05-04T10:43:37.758Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aditya\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-05-04T10:43:37.759Z] CLI Version:   10.7.2
+[debug] [2022-05-04T10:43:37.759Z] Platform:      win32
+[debug] [2022-05-04T10:43:37.759Z] Node Version:  v16.15.0
+[debug] [2022-05-04T10:43:37.763Z] Time:          Wed May 04 2022 16:13:37 GMT+0530 (India Standard Time)
+[debug] [2022-05-04T10:43:37.763Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-04T10:43:37.907Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-04T10:43:37.907Z] > authorizing via signed-in user (yash.khivasara_19@sakec.ac.in)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Aditya\Portfolio Webste
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-05-04T10:44:16.046Z] Using project from CLI flag: ccl-yash-aditya
+[debug] [2022-05-04T10:44:16.052Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ccl-yash-aditya [none]
+[debug] [2022-05-04T10:44:16.959Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ccl-yash-aditya 403
+[debug] [2022-05-04T10:44:16.960Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ccl-yash-aditya {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-05-04T10:44:16.960Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-05-04T10:44:17.297Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Aditya\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:47:12)
+    at RetryOperation._fn (C:\Users\Aditya\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:286:39)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project ccl-yash-aditya. Please make sure the project exists and your account has permission to access it.
